@@ -1,0 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
+
+//Check Value Existence in HashMap
+public class CheckValueHashMap {
+
+    public static void main(String[] args){
+
+
+        Map<String, Integer> studentMap = new HashMap<>();
+
+        studentMap.put("Hammond", 57564645);
+        studentMap.put("Mohammed", 32443433);
+        studentMap.put("John", 43243243);
+
+
+
+        if(studentMap.containsKey("Hammond")){
+
+            System.out.println("Is the student with Hammond exits ? "+studentMap.containsKey("Hammond"));
+        }
+        else {
+
+            System.out.println("The student with name "+studentMap.get("Hammond")+" is not exits");
+        }
+
+
+    }
+}
